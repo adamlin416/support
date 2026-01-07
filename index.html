@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App 支援服務 | Support</title>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #F2F2F7;
+            --card-bg: #FFFFFF;
+            --text-color: #1C1C1E;
+            --secondary-text: #8E8E93;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .brand-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #007AFF, #00C7BE);
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: var(--secondary-text);
+            margin-bottom: 24px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .contact-btn:hover {
+            opacity: 0.9;
+        }
+
+        .faq-section {
+            text-align: left;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #E5E5EA;
+            padding: 16px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .faq-answer {
+            color: var(--secondary-text);
+            font-size: 15px;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            color: var(--secondary-text);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="brand-icon">G</div>
+            <h1>App 支援中心</h1>
+            <p>如果您在使用我們開發的應用程式 (如 Personality Monitor, FridgeNote) 時遇到問題，或有任何建議，歡迎與我們聯繫。</p>
+            <a href="mailto:f69720917@gmail.com" class="contact-btn">聯絡支援團隊</a>
+        </div>
+
+        <div class="card faq-section">
+            <h3>常見問題 (FAQ)</h3>
+
+            <div class="faq-item">
+                <span class="faq-question">App 出現閃退或異常怎麼辦？</span>
+                <p class="faq-answer">請嘗試更新 App 至最新版本，或是重新啟動您的裝置。如果問題持續，請聯絡我們並提供您的裝置型號與 iOS 版本。</p>
+            </div>
+
+            <div class="faq-item">
+                <span class="faq-question">桌面小工具 (Widget) 沒有顯示？</span>
+                <p class="faq-answer">請長按桌面進入編輯模式，移除舊的小工具後重新添加。若顯示空白，請嘗試開啟 App 一次以刷新數據。</p>
+            </div>
+
+            <div class="faq-item">
+                <span class="faq-question">如何備份我的數據？</span>
+                <p class="faq-answer">如果您的 App 支援 iCloud 同步，請確保在 iOS 設定中已開啟 iCloud Drive 權限，數據將自動備份。</p>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 Greensilver. All rights reserved.<br>
+            <a href="privacy.html" style="color: #8E8E93; text-decoration: underline;">隱私權政策</a>
+        </footer>
+    </div>
+</body>
+
+</html>
