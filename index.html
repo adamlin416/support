@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App 支援服務 | Support</title>
+    <title>App Support | 支援服務</title>
     <style>
         :root {
             --primary-color: #007AFF;
@@ -65,15 +65,35 @@
             margin-bottom: 24px;
         }
 
+        .contact-info {
+            background-color: #F5F5F7;
+            padding: 16px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .email-text {
+            font-family: monospace;
+            font-size: 16px;
+            color: var(--text-color);
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
         .contact-btn {
             display: inline-block;
             background-color: var(--primary-color);
             color: white;
             text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 24px;
+            padding: 10px 20px;
+            border-radius: 20px;
             font-weight: 600;
             transition: opacity 0.2s;
+            font-size: 14px;
         }
 
         .contact-btn:hover {
@@ -86,7 +106,7 @@
 
         .faq-item {
             border-bottom: 1px solid #E5E5EA;
-            padding: 16px 0;
+            padding: 20px 0;
         }
 
         .faq-item:last-child {
@@ -97,12 +117,25 @@
             font-weight: 600;
             margin-bottom: 8px;
             display: block;
+            color: var(--text-color);
+        }
+
+        .faq-question small {
+            font-weight: normal;
+            color: var(--secondary-text);
+            display: block;
+            margin-top: 2px;
         }
 
         .faq-answer {
             color: var(--secondary-text);
             font-size: 15px;
             margin: 0;
+        }
+
+        .faq-answer span {
+            display: block;
+            margin-bottom: 4px;
         }
 
         footer {
@@ -117,34 +150,61 @@
 <body>
     <div class="container">
         <div class="card">
-            <div class="brand-icon">G</div>
-            <h1>App 支援中心</h1>
-            <p>如果您在使用我們開發的應用程式 (如 Personality Monitor, FridgeNote) 時遇到問題，或有任何建議，歡迎與我們聯繫。</p>
-            <a href="mailto:f69720917@gmail.com" class="contact-btn">聯絡支援團隊</a>
+            <div class="brand-icon">S</div>
+            <h1>App Support Center</h1>
+            <p>We are here to help. If you have any questions or feedback, please contact us.<br>
+                <small>我們隨時為您提供協助。如有任何問題或建議，歡迎聯繫我們。</small>
+            </p>
+
+            <div class="contact-info">
+                <span class="email-text">f69720917@gmail.com</span>
+                <a href="mailto:f69720917@gmail.com" class="contact-btn">Email Us / 寄信給我們</a>
+            </div>
         </div>
 
         <div class="card faq-section">
-            <h3>常見問題 (FAQ)</h3>
+            <h3>FAQ / 常見問題</h3>
 
             <div class="faq-item">
-                <span class="faq-question">App 出現閃退或異常怎麼辦？</span>
-                <p class="faq-answer">請嘗試更新 App 至最新版本，或是重新啟動您的裝置。如果問題持續，請聯絡我們並提供您的裝置型號與 iOS 版本。</p>
+                <span class="faq-question">
+                    My App is crashing or freezing.
+                    <small>App 出現閃退或當機。</small>
+                </span>
+                <p class="faq-answer">
+                    <span>Please insure your iOS and App match the latest version available. Restarting your device
+                        often helps.</span>
+                    <span>請確認您的 iOS 和 App 皆為最新版本。重新啟動裝置通常能解決問題。</span>
+                </p>
             </div>
 
             <div class="faq-item">
-                <span class="faq-question">桌面小工具 (Widget) 沒有顯示？</span>
-                <p class="faq-answer">請長按桌面進入編輯模式，移除舊的小工具後重新添加。若顯示空白，請嘗試開啟 App 一次以刷新數據。</p>
+                <span class="faq-question">
+                    Widget is not displaying data?
+                    <small>桌面小工具沒有顯示數據？</small>
+                </span>
+                <p class="faq-answer">
+                    <span>Try removing and re-adding the widget. If it remains blank, open the Main App once to refresh
+                        the data connection.</span>
+                    <span>嘗試移除並重新加入小工具。若是空白，請開啟一次 App 以更新數據連結。</span>
+                </p>
             </div>
 
             <div class="faq-item">
-                <span class="faq-question">如何備份我的數據？</span>
-                <p class="faq-answer">如果您的 App 支援 iCloud 同步，請確保在 iOS 設定中已開啟 iCloud Drive 權限，數據將自動備份。</p>
+                <span class="faq-question">
+                    How is my data stored?
+                    <small>我的數據如何儲存？</small>
+                </span>
+                <p class="faq-answer">
+                    <span>Your data is stored locally on your device and synced via iCloud (if enabled). We do not
+                        collect personal data on our servers.</span>
+                    <span>您的數據儲存在本機並透過 iCloud 同步（若開啟）。我們不會將個人數據上傳至伺服器。</span>
+                </p>
             </div>
         </div>
 
         <footer>
             &copy; 2026 Greensilver. All rights reserved.<br>
-            <a href="privacy.html" style="color: #8E8E93; text-decoration: underline;">隱私權政策</a>
+            <a href="privacy.html" style="color: #8E8E93; text-decoration: underline;">Privacy Policy / 隱私權政策</a>
         </footer>
     </div>
 </body>
